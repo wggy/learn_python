@@ -1,11 +1,15 @@
-def greet_user(username):
-	print('hello, '+username.title()+'!');
+def greet_user(names):
+	for name in names:
+		if name == 'ping':
+			name = 'pingshuai';
+		print(name);
 
-greet_user('kobe');
 
-def describe_pet(animal_type, pet_name):
-	"""show annimal type"""
-	print("\nI have a " + animal_type + ".")
-	print("My " + animal_type + "'s name is " + pet_name.title() + ".")
-describe_pet('hamster', 'harry')
-describe_pet(pet_name='maomao', animal_type='dog');
+names = ['lin', 'hao', 'ping'];
+greet_user(names[:]);
+print(names);
+
+
+
+
+
